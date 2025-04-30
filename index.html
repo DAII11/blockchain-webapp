@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Mini Blockchain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <div class="logo">ChainLite</div>
+      <button id="themeToggle">Toggle Dark Mode</button>
+    </header>
+  
+    <main>
+      <h1>Simple Blockchain App</h1>
+  
+      <form id="txForm">
+        <input type="text" id="sender" placeholder="Sender" required>
+        <input type="text" id="receiver" placeholder="Receiver" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <button type="submit">Add Transaction</button>
+      </form>
+      <div id="confirmationMsg" style="display:none;">Transaction added successfully!</div>
+      <h2>Readable Transactions:</h2>
+<div id="niceOutput"></div>
+      <h2>Blockchain:</h2>
+      <pre id="chainOutput"></pre>
+    </main>
+  
+    <footer>
+      <p>&copy; 2025 ChainLite | Built for educational demo purposes</p>
+    </footer>
+  
+    <script src="app.js"></script>
+</body>
+</html>
